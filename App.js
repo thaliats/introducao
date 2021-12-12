@@ -1,11 +1,11 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import IMC from './components/12IMC/CalculadoraApp'
+import Home from './components/Home'
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <IMC/>
+      <Home/>
     </View>
   );
 }
