@@ -1,13 +1,16 @@
-import React from 'react';
-import { StyleSheet, View } from 'react-native';
-import Home from './components/Home'
+import React, { Component } from 'react';
+import { StyleSheet } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import Routes from './components/Atividade 4/Routes';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Home/>
-    </View>
-  );
+export default class App extends Component {
+  render(){
+    return (
+      <SafeAreaProvider>
+        <Routes />
+      </SafeAreaProvider>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
