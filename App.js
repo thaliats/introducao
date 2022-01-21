@@ -1,23 +1,12 @@
-import React, { Component } from 'react';
-import { StyleSheet } from 'react-native';
+import React from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import Routes from './components/Atividade 4/Routes';
+import RotaSuprema from './components/Atividade 5/Routes';
 
-export default class App extends Component {
-  render(){
+export default function App() {
+
     return (
       <SafeAreaProvider>
-        <Routes />
+      <RotaSuprema></RotaSuprema>
       </SafeAreaProvider>
-    );
-  }
+  );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
